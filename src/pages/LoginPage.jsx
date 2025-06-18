@@ -17,15 +17,15 @@ const LoginPage = () => {
   console.log(admins);
   
 
-  useEffect(() => {
-    const storedAdmin = localStorage.getItem("admin");
-    if (storedAdmin) {
-      const admin = JSON.parse(storedAdmin);
-      if (admin?.type === "Super Admin") {
-        navigate(`/all/home`);
-      }
-    }
-  }, [navigate]);
+  // useEffect(() => {
+  //   const storedAdmin = localStorage.getItem("admin");
+  //   if (storedAdmin) {
+  //     const admin = JSON.parse(storedAdmin);
+  //     if (admin?.type === "Super Admin") {
+  //       navigate(`/all/home`);
+  //     }
+  //   }
+  // }, [navigate]);
 
   const handleSendOtp = async () => {
     const phone_no = phone.slice(-10);
