@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Remove arrows in Chrome, Safari, Edge */
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows in Firefox */
+.no-arrows {
+  -moz-appearance: textfield;
+}
